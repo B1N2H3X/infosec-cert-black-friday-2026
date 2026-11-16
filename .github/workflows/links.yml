@@ -1,0 +1,28 @@
+name: Check links
+
+on:
+  schedule:
+    - cron: "0 7 * * 1"   # weekly, Monday 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --max-retries 2 --accept 200,201,204,301,302,403,429 README.md
+          fail: false
+          output: lychee-report.md
+      - name: Open issue if links are broken
+        if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "🔗 Broken deal links detected"
+          content-filepath: lychee-report.md
+          labels: broken-link

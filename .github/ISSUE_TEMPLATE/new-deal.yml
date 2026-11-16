@@ -1,0 +1,39 @@
+name: "💸 New / updated deal"
+description: Report a Black Friday 2026 InfoSec cert, training or lab deal
+title: "[Deal] <Vendor> – <discount>"
+labels: ["new-deal"]
+body:
+  - type: input
+    id: vendor
+    attributes: { label: Vendor, placeholder: "OffSec" }
+    validations: { required: true }
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options: [certification, training, labs]
+    validations: { required: true }
+  - type: input
+    id: offer
+    attributes: { label: What is discounted?, placeholder: "Learn One (OSCP+) annual subscription" }
+    validations: { required: true }
+  - type: input
+    id: discount
+    attributes: { label: Discount / price, placeholder: "20% off — $2,749 → $2,199" }
+    validations: { required: true }
+  - type: input
+    id: code
+    attributes: { label: Coupon code (leave blank if auto-applied) }
+  - type: input
+    id: dates
+    attributes: { label: Start – end date, placeholder: "2026-11-27 → 2026-12-01" }
+  - type: input
+    id: url
+    attributes: { label: Official vendor URL (no affiliate links), placeholder: "https://..." }
+    validations: { required: true }
+  - type: input
+    id: proof
+    attributes: { label: Source / proof (announcement, tweet, email, screenshot link) }
+  - type: textarea
+    id: notes
+    attributes: { label: Notes (exclusions, regions, stacking rules) }
