@@ -1,0 +1,11 @@
+## Deal(s) added / updated
+
+- Vendor:
+- Source (vendor page / announcement):
+
+## Checklist
+- [ ] I edited **only** `data/deals.yml` (README is regenerated automatically)
+- [ ] The `url` is the plain vendor link — **no affiliate / referral / UTM parameters**
+- [ ] Dates are `YYYY-MM-DD` and `last_checked` is today
+- [ ] `source: vendor` only if I confirmed it on the vendor's own site
+- [ ] `python scripts/build.py --check` passes
