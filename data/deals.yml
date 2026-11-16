@@ -1,0 +1,440 @@
+# Black Friday / Cyber Monday 2026 — InfoSec & Cybersecurity Certification Deals
+# Maintained by v3nomtech — https://github.com/v3nomtech/infosec-cert-black-friday-2026
+#
+# This file is the single source of truth. README.md and the exports in
+# data/ are GENERATED from it by scripts/build.py — edit this file, not the README.
+#
+# Field reference
+#   vendor        (required) Vendor / training provider name
+#   category      (required) one of: certification | training | labs
+#   offer         (required) What is discounted, in one short sentence
+#   certs         (optional) List of cert / course acronyms covered
+#   discount      (required) e.g. "20% off", "$2,749 → $2,199", "TBA"
+#   code          (optional) Coupon code. Leave empty if auto-applied
+#   starts        (optional) YYYY-MM-DD — only if the vendor publishes it
+#   ends          (optional) YYYY-MM-DD (last valid day) — only if the vendor publishes it
+#   url           (required) Official vendor page for the offer (no affiliate links!)
+#   source        (required) vendor | third-party   — vendor = confirmed on the vendor's own site/channel
+#   source_url    (optional) Where the offer was confirmed or reported, if not the url itself
+#   expected      (optional) true = not announced yet (watchlist)
+#   last_year     (optional) What the vendor offered around Black Friday 2025
+#   notes         (optional) Exclusions, conflicts between sources, gotchas
+#   last_checked  (required) YYYY-MM-DD
+
+deals:
+
+  # ───────────────────────── Certifications & exam vouchers ─────────────────────────
+
+  - vendor: OffSec
+    category: certification
+    offer: Learn One annual subscription (one 200/300-level course + labs + 2 exam attempts)
+    certs: [OSCP+, OSEP, OSWE, OSED, OSWA, OSDA, OSTH, OSIR]
+    discount: "$550 off (20%) — $2,749 → $2,199/year"
+    code: ""
+    starts: 2026-11-02
+    ends: 2027-01-04
+    url: https://www.offsec.com/products/learn-one/
+    source: vendor
+    source_url: https://help.offsec.com/hc/en-us/articles/55136186629780-Learn-One-Annual-2026-Promotion-FAQ
+    last_year: "20% off Learn One; 15% off the Course & Cert Bundle during Black Friday week"
+    notes: "\"Level 20\" anniversary promo, auto-applied. Ends Jan 4, 23:59 EST. New and existing individual learners only (not org admins). Learn One only — Course + Cert Bundle ($1,749) and CyberCore ($899) are full price."
+    last_checked: 2026-11-16
+
+  - vendor: The SecOps Group (PentestingExams)
+    category: certification
+    offer: All pentesting certification exams
+    certs: [CAPen, CNPen, C-APIPen, CAPenX, CRTeamerX, C-ADPenX, CCPenX-AWS]
+    discount: "90% off — $330 exams → $33, $528 exams → $53"
+    code: BF-90
+    url: https://pentestingexams.com/offer
+    source: vendor
+    notes: "End date not published."
+    last_checked: 2026-11-16
+
+  - vendor: Practical DevSecOps
+    category: certification
+    offer: All certifications + 2/3-cert bundles (DevSecOps, AI/MCP security, cloud-native, API, threat modelling, supply chain)
+    certs: [CDP, CDE, CCSE, CCNSE, CAISP, CMCPSE, CAASE, CTMP, CASP, CSSE, CSC]
+    discount: "15% off every cert (e.g. CDP $899 → $764.15), up to $600 off bundles"
+    code: ""
+    ends: 2026-11-30
+    url: https://www.practical-devsecops.com/black-friday-sale-2026/
+    source: vendor
+    last_year: "15% off certs, $500 off bundles (ended Dec 6, 2025)"
+    notes: "Auto-applied. Ends Nov 30, midnight EST. Buy now and start the course whenever you want."
+    last_checked: 2026-11-16
+
+  - vendor: White Knight Labs
+    category: certification
+    offer: Certification courses, individual Academy classes, 6- and 12-month Academy passes
+    certs: [ARTOC, ODPC, OAOTC, ELPT]
+    discount: "50% off"
+    code: WKLBLACKFRIDAY26
+    starts: 2026-11-27
+    ends: 2026-12-18
+    url: https://training.whiteknightlabs.com/
+    source: vendor
+    source_url: https://whiteknightlabs.com/
+    notes: "Month-to-month Academy not included. Vendor banner also promises deeper discounts on course bundles and live-training upgrades."
+    last_checked: 2026-11-16
+
+  - vendor: Modern Security
+    category: certification
+    offer: AI Security Certification
+    discount: "20% off"
+    code: msec-bf20
+    url: https://www.modernsecurity.io/courses/ai-security-certification
+    source: third-party
+    source_url: https://cipherssecurity.com/cybersecurity-black-friday-deals/
+    notes: "Reported by a sponsored blog listing; not shown on the vendor's course page. Unconfirmed — check at checkout."
+    last_checked: 2026-11-16
+
+  - vendor: VantagePoint
+    category: certification
+    offer: All hacking labs and certifications
+    discount: "70% off"
+    code: ""
+    url: https://vantagepoint.enciphers.com/
+    source: vendor
+    notes: "No code needed. Vendor doesn't publish an end date (blogs report Nov 30 or Dec 15)."
+    last_checked: 2026-11-16
+
+  - vendor: CyberWarFare Labs
+    category: certification
+    offer: 40+ red/blue/cloud/AI-security certification courses + themed bundles
+    certs: [CRTA, AI-RTA, MCRTA, CRTS v2, CARTS, AzRTS, GCRTS, CCDA, CTIA]
+    discount: "Up to 91% off — most courses $9, cloud red team $49, bundles $29–$149"
+    code: ""
+    url: https://cyberwarfare.live/bundles
+    source: vendor
+    source_url: https://github.com/RedTeamOperations/black-friday-cyber-sale-2025
+    notes: "No code needed for bundles/courses. Extra 10% off carts ≥ $99 and 20% off ≥ $149 (code required). Premium Membership $1,999 → $1,499, All Access $1,799 → $999 (code given at checkout). End date not published."
+    last_checked: 2026-11-16
+
+  - vendor: CyberWarFare Labs
+    category: labs
+    offer: CWL Cyber Infinity — yearly access (incl. CRTA & AI-RTA) or monthly access
+    certs: [CRTA, AI-RTA]
+    discount: "Yearly $99 → $49 · Monthly $9 → $5"
+    code: "INFINITY49 / INFINITY5"
+    url: https://cyberwarfare.live/cwl-cyber-infinity
+    source: vendor
+    source_url: https://github.com/RedTeamOperations/black-friday-cyber-sale-2025
+    notes: "INFINITY49 = yearly, INFINITY5 = monthly. End date not published."
+    last_checked: 2026-11-16
+
+  - vendor: HackTricks Training
+    category: certification
+    offer: Cloud red team course bundles (AWS / GCP / Azure)
+    certs: [ARTE, ARTA, GRTE, GRTA, AzRTE, AzRTA]
+    discount: "Extra 10% off bundles on top of the 25% bundle discount (e.g. €4,396 → €2,857)"
+    code: ""
+    url: https://hacktricks-training.com/bundles/
+    source: vendor
+    notes: "Prices in EUR. End date not published. Community lists also report 20% off single courses and 15% off labs & exams — not shown on the vendor site."
+    last_checked: 2026-11-16
+
+  - vendor: RedTeamLeaders
+    category: certification
+    offer: Hacking labs and certifications
+    discount: "50% off"
+    code: BLACKFRIDAY50
+    url: https://courses.redteamleaders.com/catalog
+    source: vendor
+    notes: "Prices in BRL (R$). End date not published (community lists say Nov 30)."
+    last_checked: 2026-11-16
+
+  # ───────────────────────────── Training & courses ─────────────────────────────
+
+  - vendor: TrainSec
+    category: training
+    offer: Most individual courses — malware analysis, EDR internals, Windows internals, hardware hacking, detection engineering
+    discount: "40% off"
+    code: BF2026
+    starts: 2026-11-01
+    ends: 2026-11-30
+    url: https://trainsec.net/cybersecurity-courses-black-friday-2026/
+    source: vendor
+    notes: "November 2026 only. Excludes live events, learning paths, bundles and subscriptions."
+    last_checked: 2026-11-16
+
+  - vendor: TheXero Training Academy
+    category: training
+    offer: Wireless Operator (Wi-Fi pentesting) course — founding-member price
+    discount: "67% off — $599 → $197"
+    code: ""
+    ends: 2026-12-01
+    url: https://training.thexero.co.uk/blackfriday
+    source: vendor
+    last_checked: 2026-11-16
+
+  - vendor: Blu Raven Academy
+    category: training
+    offer: KQL, threat hunting & detection engineering courses
+    discount: "Up to 40% off (most courses 40%, Advanced Threat Hunting 25%)"
+    code: BFCM25
+    url: https://academy.bluraven.io/black-friday-2026
+    source: vendor
+    notes: "Vendor shows a countdown but no end date (community lists say Nov 30)."
+    last_checked: 2026-11-16
+
+  - vendor: Blue Cape Security
+    category: training
+    offer: HERO incident-response training bundle ("Black Friday price lock")
+    discount: "$700 off — $2,197 → $1,497"
+    code: ""
+    ends: 2026-11-30
+    url: https://bluecapesecurity.com/training-tracks/
+    source: vendor
+    notes: "Price returns to $2,197 on Dec 1. Analyst II track is also $997 until Nov 30 ($1,197 from Dec 1)."
+    last_checked: 2026-11-16
+
+  - vendor: Just Hacking Training
+    category: training
+    offer: Everything — courses, paths, CTFs
+    discount: "25% off"
+    code: BFF25
+    ends: 2026-11-30
+    url: https://www.justhacking.com/deals/
+    source: vendor
+    last_checked: 2026-11-16
+
+  - vendor: MalDev Academy
+    category: training
+    offer: Malware development courses
+    discount: "25% off"
+    code: BLKFRIDAY25
+    ends: 2026-11-30
+    url: https://maldevacademy.com/
+    source: vendor
+    notes: "Sale is live on maldevacademy.com. The code and end date come from a community list (the site blocks automated checks) — confirm at checkout."
+    last_checked: 2026-11-16
+
+  - vendor: OnlySecurity
+    category: training
+    offer: Paid courses, first month/year of Plus or Max, All Access pass
+    discount: "15% off"
+    code: ""
+    starts: 2026-11-23
+    ends: 2026-11-30
+    url: https://onlysecurity.com/black-friday/
+    source: vendor
+    notes: "Auto-applied. Nov 23 00:00 – Nov 30 23:59 UK time. Courses already on sale keep their sale price. Excludes bundles, team plans, private training, trainer passes, plan changes, renewals."
+    last_checked: 2026-11-16
+
+  - vendor: pwn.guide
+    category: training
+    offer: Every plan incl. Lifetime — discount stays on renewals
+    discount: "20% off forever"
+    code: BLKFRI20
+    ends: 2026-12-05
+    url: https://pwn.guide/pricing
+    source: vendor
+    notes: "Card checkout only."
+    last_checked: 2026-11-16
+
+  - vendor: Practical Networking
+    category: training
+    offer: Practical TLS course
+    discount: "83% off — $297 → $50"
+    code: BF2026TLS
+    url: https://classes.pracnet.net/courses/practical-tls
+    source: third-party
+    source_url: https://github.com/ps-lo/InfoSec-and-Tech-Black-Friday
+    notes: "Not mentioned on the vendor site; course page and checkout show $297 before a code is applied. Unconfirmed — check at checkout (community lists say ends Dec 6)."
+    last_checked: 2026-11-16
+
+  # ─────────────────────────────── Labs & platforms ───────────────────────────────
+
+  - vendor: LabEx
+    category: labs
+    offer: LabEx Pro (Linux, cybersecurity, DevOps hands-on labs)
+    discount: "Pro 1 yr $99 → $69.90 (30% off) · Pro 2 yr $199 → $99.90 (50% off)"
+    code: "2026BF30 / 2026BF50"
+    url: https://labex.io/pricing
+    source: vendor
+    notes: "2026BF30 = 1-year plan, 2026BF50 = 2-year plan. End date not published (community lists say Dec 7)."
+    last_checked: 2026-11-16
+
+  # ───────────────── Watchlist — not announced yet ─────────────────
+
+  - vendor: INE Security
+    category: labs
+    offer: Training subscriptions + INE Security certifications
+    certs: [eJPT, eCPPT, eWPT, eCIR, ICCA]
+    discount: "TBA"
+    url: https://ine.com/security
+    source: third-party
+    expected: true
+    last_year: "50% off INE Security certifications, up to $750 off subscriptions & bundles (ended Dec 4, 2025)"
+    notes: "Blogs report the sale starts Nov 20; INE hasn't posted terms yet."
+    last_checked: 2026-11-16
+
+  - vendor: Hack The Box
+    category: labs
+    offer: HTB Academy / Labs annual plans
+    certs: [CPTS, CBBH, CDSA, CWEE, CAPE]
+    discount: "TBA"
+    url: https://www.hackthebox.com/
+    source: third-party
+    expected: true
+    last_year: "No Black Friday-specific sale: 25% off Pro Labs annual until Nov 30, then 25% off Academy Silver/Gold annual Dec 1–31, 2025"
+    last_checked: 2026-11-16
+
+  - vendor: TryHackMe
+    category: labs
+    offer: Premium annual subscription
+    certs: [SAL1, PT1]
+    discount: "TBA"
+    url: https://tryhackme.com/
+    source: third-party
+    expected: true
+    last_year: "40% off annual subscription with code BLACKFRIDAY40 (ended Nov 28, 2025)"
+    last_checked: 2026-11-16
+
+  - vendor: TCM Security
+    category: certification
+    offer: Certifications, live training and Academy subscriptions
+    certs: [PNPT, PJPT, PMPA, PSAA, PWPA, PMRP]
+    discount: "TBA"
+    url: https://certifications.tcm-sec.com/
+    source: third-party
+    expected: true
+    last_year: "20% off all certifications & live training (no code), 50% off first Academy payment, up to $1,000 off cert bundles (ended Dec 1, 2025)"
+    last_checked: 2026-11-16
+
+  - vendor: CompTIA
+    category: certification
+    offer: Exam vouchers & CertMaster bundles
+    certs: [Security+, CySA+, PenTest+, SecurityX, Network+]
+    discount: "TBA"
+    url: https://www.comptia.org/en-us/certifications/
+    source: third-party
+    expected: true
+    last_checked: 2026-11-16
+
+  - vendor: Zero-Point Security
+    category: certification
+    offer: Red Team Ops courses + exams
+    certs: [CRTO, CRTL]
+    discount: "TBA"
+    url: https://www.zeropointsecurity.co.uk/
+    source: third-party
+    expected: true
+    last_checked: 2026-11-16
+
+  - vendor: Altered Security
+    category: certification
+    offer: Active Directory / Azure red team labs + exams
+    certs: [CRTP, CRTE, CARTP, CARTE, CRTM]
+    discount: "TBA"
+    url: https://www.alteredsecurity.com/
+    source: third-party
+    expected: true
+    last_year: "20–25% off courses & bootcamps, 25% off multi-course purchases, auto-applied (Nov 17 – Dec 17, 2025)"
+    last_checked: 2026-11-16
+
+  - vendor: Cybrary
+    category: training
+    offer: Insider Pro subscription
+    discount: "TBA"
+    url: https://www.cybrary.it/
+    source: third-party
+    expected: true
+    last_checked: 2026-11-16
+
+  - vendor: SANS / GIAC
+    category: certification
+    offer: Courses + GIAC certification attempts
+    certs: [GSEC, GCIH, GPEN, GCFA]
+    discount: "TBA"
+    url: https://www.sans.org/specials/
+    source: third-party
+    expected: true
+    notes: "SANS rarely runs Black Friday sales. Its Specials page lists region-specific EarlyBird promo codes for 4–6 day courses paid 30+ days ahead."
+    last_checked: 2026-11-16
+
+  - vendor: LetsDefend
+    category: labs
+    offer: SOC analyst / blue team training platform annual plans
+    discount: "TBA"
+    url: https://app.letsdefend.io/pricing
+    source: third-party
+    expected: true
+    last_year: "50% off annual plans with code BLCKFRDY, extra 50% for .edu emails (ended Dec 2, 2025)"
+    last_checked: 2026-11-16
+
+  - vendor: Centri (formerly Security Blue Team)
+    category: certification
+    offer: Blue team certifications
+    certs: [BTL1, BTL2]
+    discount: "TBA"
+    url: https://www.centri.org/
+    source: third-party
+    expected: true
+    last_year: "Deal teased but no details published"
+    notes: "Security Blue Team rebranded as Centri — securityblue.team now redirects to centri.org."
+    last_checked: 2026-11-16
+
+  - vendor: SEKTOR7
+    category: training
+    offer: Red team operator / malware development courses
+    discount: "TBA"
+    url: https://institute.sektor7.net/
+    source: third-party
+    expected: true
+    last_year: "25% off red team courses (code BF25)"
+    last_checked: 2026-11-16
+
+  - vendor: 8kSec
+    category: training
+    offer: Mobile, AI and ARM exploitation courses
+    discount: "TBA"
+    url: https://academy.8ksec.io/
+    source: third-party
+    expected: true
+    last_year: "15% off all courses with code blackfriday15 (ended Dec 10, 2025)"
+    last_checked: 2026-11-16
+
+  - vendor: CyberDefenders
+    category: labs
+    offer: Blue team labs + CCD certification
+    certs: [CCD]
+    discount: "TBA"
+    url: https://cyberdefenders.org/
+    source: third-party
+    expected: true
+    last_checked: 2026-11-16
+
+  - vendor: EC-Council
+    category: certification
+    offer: CEH and other EC-Council certifications
+    certs: [CEH, CHFI, CND, CPENT]
+    discount: "TBA"
+    url: https://www.eccouncil.org/
+    source: third-party
+    expected: true
+    notes: "Only coupon-aggregator codes found so far — unverified, ignore them until EC-Council announces."
+    last_checked: 2026-11-16
+
+  - vendor: ISC2
+    category: certification
+    offer: CISSP / CCSP / SSCP / CC training and exams
+    certs: [CISSP, CCSP, SSCP, CC]
+    discount: "TBA"
+    url: https://www.isc2.org/
+    source: third-party
+    expected: true
+    notes: "Only coupon-aggregator codes found so far (expired Nov 12)."
+    last_checked: 2026-11-16
+
+  - vendor: ISACA
+    category: certification
+    offer: CISM / CISA / CRISC exams, prep and membership
+    certs: [CISM, CISA, CRISC, CGEIT]
+    discount: "TBA"
+    url: https://www.isaca.org/
+    source: third-party
+    expected: true
+    notes: "Only membership codes from aggregator sites found (expired Nov 12–13)."
+    last_checked: 2026-11-16
