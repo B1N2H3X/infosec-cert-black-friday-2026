@@ -20,7 +20,7 @@
 > Prices, codes and dates change without notice. **Always confirm on the vendor's checkout page before you pay.** Spot something wrong or a new deal? [Open an issue](../../issues/new/choose) or send a PR.
 
 <!-- DEALS:START -->
-**18 live** · **2 upcoming** · **17 not announced yet** · 0 expired — _statuses auto-refreshed Nov 17, 2026_
+**19 live** · **2 upcoming** · **17 not announced yet** · 0 expired — _statuses auto-refreshed Nov 19, 2026_
 
 ### ⏰ Ending next
 
@@ -56,6 +56,7 @@
 | ✅ Live | **[pwn.guide](https://pwn.guide/pricing)** | Every plan incl. Lifetime — discount stays on renewals<br><sub>ℹ️ Card checkout only.</sub> | 20% off forever | `BLKFRI20` | Dec 05, 2026 | ✔️ vendor |
 | ✅ Live | **[TheXero Training Academy](https://training.thexero.co.uk/blackfriday)** | Wireless Operator (Wi-Fi pentesting) course — founding-member price | 67% off — $599 → $197 | _auto_ | Dec 01, 2026 | ✔️ vendor |
 | ✅ Live | **[TrainSec](https://trainsec.net/cybersecurity-courses-black-friday-2026/)** | Most individual courses — malware analysis, EDR internals, Windows internals, hardware hacking, detection engineering<br><sub>ℹ️ November 2026 only. Excludes live events, learning paths, bundles and subscriptions.</sub> | 40% off | `BF2026` | Nov 30, 2026 | ✔️ vendor |
+| ✅ Live | **[Wireshark Labs](https://wiresharklabs.org/)** | Hands-on Wireshark packet-analysis labs — WCA Labs (Wireshark Certified Analyst exam prep) and Ranger Lab (real-world troubleshooting and security cases)<br><sub>WCA</sub><br><sub>ℹ️ Live now. One-time purchase. Code valid until Dec 2, 08:00 UTC. Submitted by the vendor.</sub> | WCA Labs $199.99 → $99.99 · Ranger Lab $249.99 → $179.99 | `PACKETFRIDAY` | Dec 01, 2026 | ✔️ vendor |
 | ⏳ Starts Nov 23 | **[OnlySecurity](https://onlysecurity.com/black-friday/)** | Paid courses, first month/year of Plus or Max, All Access pass<br><sub>ℹ️ Auto-applied. Nov 23 00:00 – Nov 30 23:59 UK time. Courses already on sale keep their sale price. Excludes bundles, team plans, private training, trainer passes, plan changes, renewals.</sub> | 15% off | _auto_ | Nov 30, 2026 | ✔️ vendor |
 
 ## 🧪 Labs & Platforms
